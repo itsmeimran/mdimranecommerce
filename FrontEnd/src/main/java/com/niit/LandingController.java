@@ -48,4 +48,10 @@ public class LandingController {
 		ModelAndView obj1=new ModelAndView("viewall");
 		return obj1;
 	}
+	@RequestMapping(value={"/mobile"})
+	public ModelAndView mobilePage()
+	{
+		ModelAndView obj1=new ModelAndView("mobile");
+		return obj1;
+	}
 }

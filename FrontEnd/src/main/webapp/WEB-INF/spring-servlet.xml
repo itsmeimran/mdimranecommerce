@@ -10,7 +10,9 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<context:component-scan base-package="com.niit" />
+	<context:component-scan base-package="com.niit"/>
+	<context:component-scan base-package="com.niit.BackEnd"/>
+	<context:component-scan base-package="com.niit.mdimBackEnd"/>
 
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
