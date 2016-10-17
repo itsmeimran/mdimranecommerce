@@ -7,16 +7,16 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.niit.mdimBackEnd.dao.productdao;
-import com.niit.mdimBackEnd.model.productmodel;
+import com.niit.mdimBackEnd.dao.ProductDAO;
+import com.niit.mdimBackEnd.model.Product;
 
 @Controller
 public class ProductController {
 
 	@Autowired
-	productdao p;
+	ProductDAO p;
 	@RequestMapping("/product/all")
-	public @ResponseBody List<productmodel> getProdduct()
+	public @ResponseBody List<Product> getProdduct()
 	{
 		return p.getAll();
 	}

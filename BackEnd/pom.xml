@@ -36,10 +36,36 @@
 			<artifactId>javaee-api</artifactId>
 			<version>7.0</version>
 		</dependency>
+		<!-- hibernate -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>5.2.3.Final</version>
+		</dependency>
+		<!-- spring-jdbc -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>4.3.3.RELEASE</version>
+		</dependency>
+		<!-- spring-orm -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+			<version>4.3.3.RELEASE</version>
+		</dependency>
+		<!-- h2 database engine -->
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<version>1.4.192</version>
+		</dependency>
+
+
 
 	</dependencies>
 	<build>
-	
+
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
