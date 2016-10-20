@@ -21,12 +21,12 @@ public class ProductTest {
 		p.setName("Imran");
 		p.setPrice(12345);
 		
-		productDAO.insert(p);
+//		productDAO.insert(p);
 		
 		p = new Product();
 		p.setName("Imran");
 		p.setPrice(12345);
-		productDAO.insert(p);
+//		productDAO.insert(p);
 		
 		ctxt.close();
 		

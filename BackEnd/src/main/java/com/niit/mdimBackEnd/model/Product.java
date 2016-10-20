@@ -12,6 +12,22 @@ public class Product {
 	private int id;
 	private String name;
 	private int price;
+	private String category;
+	private String supplier;
+	public String getCategory() {
+		return category;
+	}
+	public void setCategory(String category) {
+		this.category = category;
+	}
+	
+	
+	public String getSupplier() {
+		return supplier;
+	}
+	public void setSupplier(String supplier) {
+		this.supplier = supplier;
+	}
 	public int getId() {
 		return id;
 	}
@@ -32,7 +48,8 @@ public class Product {
 	}
 	@Override
 	public String toString() {
-		return "productmodel [id=" + id + ", name=" + name + ", price=" + price + "]";
+		return "Product [id=" + id + ", name=" + name + ", price=" + price + ", category=" + category + ", Supplier="
+				+ supplier + "]";
 	}
-
+	
 }

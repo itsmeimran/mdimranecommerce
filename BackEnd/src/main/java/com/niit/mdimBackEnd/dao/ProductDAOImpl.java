@@ -24,9 +24,36 @@ public class ProductDAOImpl implements ProductDAO{
 	}
 
 	@Override
-	public void insert(Product p) {
-		sessionFactory.getCurrentSession().persist(p);
+	public Product getProductById(int var) {
+		
+		return sessionFactory.getCurrentSession().get(Product.class, var);
+	}
+
+
+	@Override
+	public void removeProduct(int i) {
+sessionFactory.getCurrentSession().delete(getProductById(i));
+      
 		
 	}
+
+	@Override
+	public void addProduct(Product product) {
+		
+		sessionFactory.getCurrentSession().persist(product);
+		
+	}
+
+	@Override
+	public void updateProduct(Product product) {
+		
+		sessionFactory.getCurrentSession().update(product);
+	}
+
+
+
+
+	
+	
 
 }

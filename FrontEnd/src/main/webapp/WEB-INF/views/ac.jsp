@@ -4,18 +4,18 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <jsp:include page="linking.jsp" />
-<title>Home</title>
+<title>Mobiles</title>
 </head>
 <body>
 <body>
 	<div class="container" id="main"
 		style="width: 100%; background-color: grey">
 
-
+<!-- NEED TO ADD ONLY AC DATA ...panels for A/C only-->
 		<jsp:include page="header.jsp" />
 
 
-		<jsp:include page="carousel.jsp" />
+		<!--<jsp:include page="carousel.jsp" />-->
 
 		<jsp:include page="panel.jsp" />
 

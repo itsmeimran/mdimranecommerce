@@ -1,35 +1,35 @@
 
-	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> 
-	
-	<jsp:include page="linking.jsp"/>
-	<c:set var="req" value="${pageContext.request.contextPath}"/>
-	<div class="container">
-		<div class="row">
-			<div class="navbar navbar-default navbar-fixed-top">
-				<ul class="nav navbar-nav">
-					<li><a href="${req}/home">Home</a></li>
-					<li><a href="${req}/about">About</a></li>
-					<li><a href="${req}/contact">Contact</a></li>
-					
-					<li><a href="${req}/login" >Login</a></li>
-					<li><a href="${req}/register">Register</a></li>
-					<li><a href="${req}/viewall">ViewAll</a></li>
-				</ul>
-				<div class="dropdown">
-    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Categories
-    <span class="caret"></span></button>
-    <ul class="dropdown-menu">
-      <li><a href="#">Mobile</a></li>
-      <li><a href="#">TV</a></li>
-      <li><a href="#">Air Conditioner</a></li>
-      <li class="divider"></li>
-      <li><a href="#">About Us</a></li>
+ 
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<c:set var="req" value="${pageContext.request.contextPath}" />
+<jsp:include page="linking.jsp" />
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">eDevice</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="${req}/home">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Category <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="${req}/mobile">Mobile</a></li> 
+          <li><a href="${req}/computers">Computers</a></li>
+          <li><a href="${req}/ac">Air Conditioner</a></li>
+        </ul>
+      </li>
+      <li><a href="${req}/about">About</a></li>
+       <li><a href="${req}/viewall">View All</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="${req}/register"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="${req}/admin/product"><span class="glyphicon glyphicon-log-in"></span> Admin</a></li>
     </ul>
   </div>
-			</div>
-			<!-- navbar ends -->
-		</div>
-		<!-- row1 ends -->
+</nav>
+  
 
-	</div>
-	
+
+
+

@@ -1,23 +1,33 @@
+
+
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<link rel="stylesheet" href="resources/css/bootstrap.min.css">
-<link rel="stylesheet" href="resources/css/bootstrap.css">
-<link rel="stylesheet" href="resources/css/bootstrap.map.css">
-<link rel="stylesheet" href="resources/css/style.css">
-	
-<script src="resources/js/jquery.js"></script>
-<script src="resources/js/bootstrap.js"></script>
-<script src="resources/js/jquery.min.js"></script>
-<script src="resources/js/bootstrap.min.js"></script>
-<title>home</title>
+<jsp:include page="linking.jsp" />
+<title>Home</title>
 </head>
 <body>
-<jsp:include page="header.jsp"/>
-<jsp:include page="carousel.jsp"/>
+<body>
+	<div class="container" id="main"
+		style="width: 100%; background-color: grey">
 
-<jsp:include page="footer.jsp" />
+
+		<jsp:include page="header.jsp" />
 
 
+		<jsp:include page="carousel.jsp" />
+
+		<jsp:include page="panel.jsp" />
+
+		<jsp:include page="panel2.jsp" />
+
+		<jsp:include page="panel3.jsp" />
+		<jsp:include page="panel4.jsp" />
+
+		<div class="row" id="info2"></div>
+		<footer> </footer>
+	</div>
 </body>
+</body>
+
 </html>

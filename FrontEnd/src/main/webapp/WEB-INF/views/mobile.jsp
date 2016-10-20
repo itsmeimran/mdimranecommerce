@@ -1,52 +1,33 @@
+
+
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<jsp:include page="linking.jsp"/>
-<title>Mobile</title>
+<jsp:include page="linking.jsp" />
+<title>Mobiles</title>
 </head>
 <body>
-<h1>Mobile page</h1>
-<div class="container">
-<jsp:include page="header.jsp"/>
+<body>
+	<div class="container" id="main"
+		style="width: 100%; background-color: grey">
+
+<!-- NEED TO ADD ONLY MOBILES DATA ...panels for mobiles only-->
+		<jsp:include page="header.jsp" />
 
 
-<div class="row" id="Categories">
-<div class="col-sm-4 Categories">
-<div class="panel">
-<div class ="panel-heading">
-<h3 class="panel-title">Mobiles</h3>
-</div>
-<img src="" alt="Mobiles images">
-<a href="${req.contextPath}"  class="btn btn-warning btn-block">Mobiles</a>
-</div>
-</div>
-</div>
+		<!--<jsp:include page="carousel.jsp" />-->
 
-<div class="row" id="Categories">
-<div class="col-sm-4 Categories">
-<div class="panel">
-<div class ="panel-heading">
-<h3 class="panel-title">Mobiles</h3>
-</div>
-<img src="" alt="Mobiles images">
-<a href="" target="_blank" class="btn btn-warning btn-block">Mobiles</a>
-</div>
-</div>
-</div>
+		<jsp:include page="panel.jsp" />
 
+		<jsp:include page="panel2.jsp" />
 
-<div class="row" id="Categories">
-<div class="col-sm-4 Categories">
-<div class="panel">
-<div class ="panel-heading">
-<h3 class="panel-title">Mobiles</h3>
-</div>
-<img src="" alt="Mobiles images">
-<a href="" target="_blank" class="btn btn-warning btn-block">Mobiles</a>
-</div>
-</div>
-</div>
-<jsp:include page="footer.jsp" />
-</div>
+		<jsp:include page="panel3.jsp" />
+		<jsp:include page="panel4.jsp" />
+
+		<div class="row" id="info2"></div>
+		<footer> </footer>
+	</div>
 </body>
+</body>
+
 </html>

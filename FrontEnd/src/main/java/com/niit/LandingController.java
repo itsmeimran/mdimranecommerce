@@ -54,4 +54,16 @@ public class LandingController {
 		ModelAndView obj1=new ModelAndView("mobile");
 		return obj1;
 	}
+	@RequestMapping(value={"/computers"})
+	public ModelAndView computerPage()
+	{
+		ModelAndView obj1=new ModelAndView("computers");
+		return obj1;
+	}
+	@RequestMapping(value={"/ac"})
+	public ModelAndView acPage()
+	{
+		ModelAndView obj1=new ModelAndView("ac");
+		return obj1;
+	}
 }

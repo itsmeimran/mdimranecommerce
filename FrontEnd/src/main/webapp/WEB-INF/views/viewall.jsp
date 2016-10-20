@@ -5,17 +5,24 @@
 <link rel="stylesheet" href="resources/css/style.css">
 <link rel="stylesheet" href="resources/css/bootstrap.css">
 
-<script src="resources/js/jquery.js"></script>
+
 <script src="resources/js/bootstrap.js"></script>
 <script src="resources/js/jquery.min.js"></script>
 <script src="resources/js/bootstrap.min.js"></script>
 <script src="resources/js/angular.min.js"></script>
 <script src="resources/js/angular.js"></script>
-<title>View</title>
+<title>View All</title>
 </head>
-<body ng-app="myModule">
-    <div ng-controller="myController">
-        <table>
+<body >
+<div class="container" id="main"
+		style="width: 100%; background-color: grey">
+
+
+		<jsp:include page="header.jsp" />
+
+
+    <div ng-app="myModule" ng-controller="myController" >
+        <table class ="table">
             <thead>
                 <tr>
                     <th>Id</th>
@@ -36,6 +43,9 @@
         
     </div>
     <script src="resources/js/Script.js"></script>
+    <div class="row" id="info2"></div>
+		<footer> </footer>
+	</div>
 </body>
 </html>
 
